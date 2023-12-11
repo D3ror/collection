@@ -1,0 +1,147 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>JS Documentation</title>
+</head>
+<body>
+
+<nav id="navbar" class="navbar">
+  <header>JS Documentation</header>
+  <a class="nav-link" href="#Introduction">Introduction</a>
+  <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+  <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+  <a class="nav-link" href="#Hello_world">Hello world</a>
+  <a class="nav-link" href="#Variables">Variables</a>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+  <p>Paragraph text here...</p>
+<p>Paragraph text here...</p>
+<code>console.log('Hello World');</code>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+ <p>Paragraph text here...</p>
+    <p>Paragraph text here...</p>
+    <code>var example = 'example';</code>
+  </section>
+  <section class="main-section" id="JavaScript_and_Java">
+    <header>JavaScript and Java</header>
+    <p>Paragraph text here...</p>
+    <p>Paragraph text here...</p>
+    <code>let example = 'example';</code>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+     <p>Paragraph text here...</p>
+    <p>Paragraph text here...</p>
+    <code>document.getElementById('example');</code>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+<p>Paragraph text here...</p>
+    <p>Paragraph text here...</p>
+    <code>const example = 'example';</code>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+  </section>
+</main>
+
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+#navbar {
+  position: fixed;
+  width: 300px; /* Width of the sidebar */
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  overflow: auto;
+  border-right: solid 1px #ccc;
+  padding-top: 20px;
+}
+
+header {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: solid 1px #ccc;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  background-color: #f4f4f4;
+}
+
+#main-doc {
+  margin-left: 300px; /* Same as the width of the sidebar */
+  padding: 20px;
+}
+
+.main-section header {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #fff;
+  }
+
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+
+  .nav-link {
+    text-align: left;
+    padding-left: 25px;
+  }
+}
+
+
+** end of undefined **
+
