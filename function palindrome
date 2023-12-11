@@ -1,0 +1,9 @@
+JS
+
+function palindrome(str) {
+  let normalizedStr = str.replace(/[\W_]/g, '').toLowerCase();
+    let reversedStr = normalizedStr.split('').reverse().join('');
+  return normalizedStr === reversedStr;
+}
+
+palindrome("eye");
