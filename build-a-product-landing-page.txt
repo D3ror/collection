@@ -1,0 +1,197 @@
+** start of undefined **
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, heigth=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header id="header">
+  <img 
+    id="header-img"
+    width= 200px; 
+    height= auto;
+    position= absolute;
+    top= 0; 
+      left= 0; 
+    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+    alt="tutorial picture" />
+  <nav id="nav-bar">
+    <a class="nav-link" href="#Headline">Trombone</a>
+    <a class="nav-link" href="#Linehead">Video</a>
+    <a class="nav-link" href="#Heliadne">News</a>
+  </nav>
+</header>
+<main>
+  <section id="Headline">
+    </section>
+<section id="slideshow">
+  <div class="slide active">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQ-Tv4My1gCVrSZz79iUnK9At2K_jgPgT1jyw17f3Iz4cbzQfmRlhFkbLjtAAKoNsj_s&usqp=CAU" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQ-Tv4My1gCVrSZz79iUnK9At2K_jgPgT1jyw17f3Iz4cbzQfmRlhFkbLjtAAKoNsj_s&usqp=CAU" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQ-Tv4My1gCVrSZz79iUnK9At2K_jgPgT1jyw17f3Iz4cbzQfmRlhFkbLjtAAKoNsj_s&usqp=CAU" alt="Image 3">
+  </div>
+</section>
+  <section id="Linehead">
+    </section>
+<sectionid="video"> 
+    <iframe
+      id="video"
+      height="200"
+      src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </section>
+  <section id="Heliadne">
+    <h3>Subscribe to Trombone News</h3>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input 
+        id="email"
+        name="email"
+        placeholder="Write your email here"
+        type="email"
+        required />
+      <input id="submit" type="submit" value="Join today" class="btn"/>
+    </form>
+  </section>
+</main>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --header-height: 60px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.6;
+}
+#header {
+ background:#6a8161; 
+  border-radius: 25px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 1em;background-color:#6a8161;
+  overflow: hidden;
+}
+#header-img {
+  height: 50px; 
+}
+#nav-bar {
+  display: flex;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+.nav-link:hover {
+  background-color: #4CAF50;
+}
+main {
+  padding-top: var(--header-height); 
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  gap: 10px; 
+}
+.flex-container > div {
+  background-color: #f9e4e4;
+  padding: 20px;
+  font-size: 30px;
+}
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* spacing between form items */
+  margin-top: 20px;
+}
+#email {
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#slideshow {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+@keyframes slideShow {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  40% { opacity: 1; }
+  60% { opacity: 0; }
+}
+.slide:nth-child(1) {
+  animation: slideShow 15s infinite;
+}
+
+.slide:nth-child(2) {
+  animation: slideShow 15s infinite;
+  animation-delay: 9s; 
+}
+
+.slide:nth-child(3) {
+  animation: slideShow 15s infinite;
+  animation-delay: 12s;
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-color:;
+  }
+}
+
+** end of undefined **
+
